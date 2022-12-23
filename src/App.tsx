@@ -3,6 +3,7 @@ import './App.css';
 import {OnOff} from './components/OnOff/OnOff'
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontroledAccordion";
 
 /*check commits*/
 
@@ -20,11 +21,12 @@ function App() {
             <Rating value={4}/>
             <Rating value={5}/>
         </div>*/
-        <>
+        <div className={'App'}>
             <OnOff />
             <OnOff />
             <OnOff />
-        </>
+            <UncontrolledAccordion titleValue={'Menu'}/>
+        </div>
     );
 }
 /*type TitlePropsType = {
